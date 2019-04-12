@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Registration Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+      <main class="container">
+        <header class="header">
+          <h1>The Code Review</h1>
+        </header>
+          <div class="signup">
+            <h2>Signup for our newsletter</h2>
+              <p>Get the latest news on how your code is doing right in your inbox<p>
+          </div>
+              <form>
+
+
+
+                <div class="wrapper">
+
+                   <fieldset>
+
+                   <legend class="contact">Contact Information</legend>
+
+                    <div class="flex">
+                    <label for="name">Full Name</label>
+                    <input required type="text" name="full_name" id="name" placeholder="Required">
+                    </div>
+
+                    <div class="flex">
+                    <label for="email">Email Address</label>
+                    <input required type="email" name="email" id="email" placeholder="Required">
+                    </div>
+
+                    <div class="flex">
+                    <label for="telephone">Phone Number</label>
+                    <input type="tel" name="phone_number" id="telephone">
+                    </div>
+
+                    <div class="flex">
+                    <label for="address">Street Address</label>
+                    <input type="text" name="street_address" id="address">
+                    </div>
+
+                    <div class="flex">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                    </div>
+
+                    <div class="flex">
+                    <label for="province">Province</label>
+                    <select name="province" id="province">
+                        <option value="Choose">Choose your Province</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="YT">Yukon</option>
+                     </select>
+                      </div>
+
+                  <div class="flex">
+                  <label for="postal">Postal Code</label>
+                  <input type="text" name="postal_code" id="postal">
+                  </div>
+
+               </fieldset>
+
+          </div>
+
+              <fieldset>
+
+                <legend class="news">Newsletter</legend>
+
+                <div class="flex-2">
+
+                <label>Select the newsletters you would like to receive</label><br>
+                  <input type="checkbox" name="newsletter" value="HTML_News" id="HTML">
+                  <label for="HTML">HTML news</label><br>
+
+                  <input type="checkbox" name="newsletter" value="CSS_News" id="CSS">
+                  <label for="CSS">CSS News</label><br>
+
+                  <input type="checkbox" name="newsletter" value="Javascript_News" id="Javascript">
+                  <label for="Javascript">Javascript News</label><br>
+
+
+              <label>Newsletter format</label><br>
+                <input type="radio" name="format" value="Web" id="Web">
+                <label for="Web">HTML</label><br>
+
+                <input type="radio" name="format" value="plain_text" id="plain">
+                <label for="plain">Plain Text</label><br>
+
+              </div>
+
+
+
+              <label for="topic">Other topics you'd like to hear about</label>
+              <textarea name="topics" rows="8" cols="40" id="topic" placeholder="Your ideas..."></textarea><br>
+
+              <button type="submit" id="signup" class="btn">Sign Up</button>
+
+              </fieldset>
+
+
+               </form>
+
+    </main>
+
+        <footer>
+
+        <h4>&copy; The Code Review</h4>
+
+
+      </footer>
+    </body>
+</html>

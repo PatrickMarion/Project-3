@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+body {
+    text-align: left;
+    font-family: Merriweather;
+}
+
+header {
+  background-color: #9F2B3D;
+  margin: auto;
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color:white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size:1.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color:grey;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  opacity: .5;
+}
+
+legend{
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 1.2em;
+  font-weight:bold;
+}
+
+form{
+  width: 90%;
+  text-align: left;
+}
+
+footer {
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+input[placeholder] {
+  text-align: right;
+  opacity: .5;
+  padding-right: 2em;
+}
+
+textarea[placeholder] {
+  text-align: left;
+  opacity: .5;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  background-color: #F3F6F6;
+  border-radius: 1em;
+  border: none;
+  display: inline-block;
+}
+
+/*Layout Containers--------*/
+
+.signup {
+  margin-bottom: 10px;
+}
+
+.contact{
+  margin: 10px 0 10px;
+  border-top: 10px double black;
+  width: 100%;
+}
+
+.flex input, select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 3em;
+    background-color: #F3F6F6;
+    border-radius: 1em;
+    border: none;
+    width: 100%;
+    flex-basis: 50%;
+    padding: 10px;
+    }
+
+.flex:hover input {
+  background-color: lightblue;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.flex-2 label{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.news{
+  margin: 10px 0 10px 0;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.btn{
+  color:white;
+  background-color: #4DDCD5;
+  font-size: 20px;
+  padding: 20px 50px 20px 50px;
+  width:  100%;
+}
+
+label  {
+  display:block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: 30px;
+  margin: 0;
+  padding-left: 5px;
+  }
+
+/*Psuedo Classes*/
+
+input:focus {
+  border-color:#52bab3
+}
+
+textarea[id="topic"] {
+  width: 50%;
+  transition: ease-in-out, width .2s ease-in-out;
+}
+
+textarea[id="topic"]:focus {
+  width: 100%;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px){
+  .container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+     flex-wrap:wrap;
+     }
+
+  .wrapper label {
+   width: 25%;
+   }
+
+  }
